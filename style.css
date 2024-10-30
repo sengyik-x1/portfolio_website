@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-color: #F5F5F5;
+    --second-bg-color: ;
+    --text-color: black;
+
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 6%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: #ffffff;
+
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: default;
+}
+
+.navbar a {
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    border-bottom: 2px solid transparent;
+    transition: transform 0.3s;
+}
+
+.navbar a:hover {
+    border-bottom-color: black;
+    font-size: 1.8rem;
+    transform: scale(1.1);
+    /* color: aquamarine; */
+
+}
+
+.main-container {
+    display: flex;
+    margin-top: 7rem;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 20%;
+    background-color: white;
+    padding: 1em;
+    height: 100%;
+    justify-items: center;
+    align-items: center;
+}
+
+.content {
+    width: 80%;
+    padding-top: 2em;
+    padding-right: 0em;
+    padding-left: 0em;
+    padding-bottom: 0px;
+   
+    margin-left: 20%;
+    margin-top: 0em;
+    margin-bottom: 0px;
+
+}
+
+.home {
+    /* margin-top: 2rem; */
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* padding: 5rem 9%; */
+    align-items: center;
+    justify-content: start;
+    padding: 20px;
+    /* background-color: blue; */
+
+}
+
+.sidebar-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    perspective: 2000px;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    transition: transform 0.6s;
+}
+
+.profile-img:hover {
+    transform: rotateY(180deg);
+}
+
+.line {
+    background-color: grey;
+    width: 100px;
+    height: 1px;
+    margin: 10px auto;
+
+}
+
+.social-media-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5em 0.5em;
+    padding: 0;
+    width: 100%;
+}
+
+.social-media-container img {
+    width: 3em;
+    height: 3em;
+}
+
+.social-media-title {
+    margin: 0.5em auto;
+}
+
+.social-media-container h2 {
+    font-weight: 300;
+    font-style: italic;
+    font-size: x-small;
+}
+
+.social-media-container li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+.home-content {
+    /* padding-left: 10rem; */
+    justify-items: flex-start;
+    max-width: 600px;
+}
+
+.home-content .hello-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.home-content #name {
+    font-size: 3.0rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about {
+    margin-top: 1rem;
+    display: flex;
+    width: 100%;
+    padding: 2rem 9%;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+
+.sec-title {
+    font-size: 3.0rem;
+    text-align: center;
+}
+
+.about .about-name {
+    text-align: center;
+}
+
+.about p {
+    text-align: center;
+    font-weight: 600;
+    padding: 5px;
+}
+
+.technologystack {
+    margin-top: 1rem;
+    padding: 2rem 9%;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.techstack-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    scroll-behavior: auto;
+    /* padding: 2rem 9%; */
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    /* overflow: hidden; */
+    /* overflow-x: auto; */
+    /* background-color: rebeccapurple; */
+}
+
+.techstack-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.techstack-card:hover {
+    transform: scale(1.1);
+}
+
+.techstack-container img {
+    height: 150px;
+    width: 150px;
+    object-fit: contain;
+
+}
+
+.techstack-container .css-logo {
+    height: 250px;
+    width: 250px;
+}
+
+.techstack-container .js-logo {
+    height: 300px;
+    width: 300px;
+}
+
+.techstack-container .flutter-dart-logo {
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+}
+
+.myhobbiessec {
+    background-color: black;
+    color: #ffffff;
+}
+
+.myhobbies-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hobby-sub-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hobby-sub-title img {
+    width: 50px;
+    height: 50px;
+}
+
+.hobby-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+.campus-life-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.campus-life-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    transition: transform 0.3s;
+    align-items: center;
+    
+}
+
+.campus-life-card:hover {
+    transform: scale(1.1);
+}
+
+.campus-life-card h2{
+    justify-content: center;
+}
+
+.campus-life-card img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.future-plan-container{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    height: 100%;
+}
+
+.future-plan-container img{
+    width: 50px;
+    height: 50px;
+}
+
